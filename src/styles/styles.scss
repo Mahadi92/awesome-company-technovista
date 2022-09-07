@@ -20,18 +20,32 @@
 // -------------- Glimpses Section style -------------- //
 .team_section{
   min-height: 30.875rem;
-    background: linear-gradient(rgba(80, 114, 157, 0.84), rgba(80, 114, 157, 0.84)), url("/static/images/team_bg.png") no-repeat center center / cover;
-    clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
-  }
+  background: linear-gradient(rgba(80, 114, 157, 0.84), rgba(80, 114, 157, 0.84)), url("/static/images/team_bg.png") no-repeat center center / cover;
+  clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
 
-  .input_select{
-    @apply flex items-center;
-    .ant-select-selector{
-      height: 3rem !important;
-      display: flex;
-      align-items: center;
-    }
+.input_select{
+  @apply flex items-center;
+  .ant-select-selector{
+    height: 3rem !important;
+    display: flex;
+    align-items: center;
   }
+}
+
+// -------------- Footer Section style -------------- //
+.newsletter{
+  box-shadow: 0px -7px 10px rgba(0, 0, 0, 0.25);
+  .newsletter_bottom_shadow{
+    background: #333333;
+    box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+}
+
+
+
+
 
 .ant-radio-inner{
   @apply border border-primary;

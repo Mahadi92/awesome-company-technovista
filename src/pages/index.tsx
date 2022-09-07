@@ -20,7 +20,7 @@ const heroData: HeroData[] = [
       "Continually whiteboard viral ROI with functional e-services. Enthusiastically fabricate equity invested communities rather than cross-media markets.",
     btn: {
       label: "GET QUOTE",
-      link: "/",
+      link: "/registration",
     },
     img: "/static/images/hero_img.png",
   },
@@ -30,8 +30,8 @@ const Home: NextPage = () => {
   return (
     <DefaultLayout>
       {/* ----------------- Header section ----------------- */}
-      <header className="home_hero pt-36 pb-16 lg:h-[90vh] flex items-center">
-        <main className="wrapper">
+      <header className="home_hero relative pt-36 pb-16 lg:h-[90vh] flex items-center">
+        <div className="wrapper">
           {/* If this is slider */}
           {heroData.map((item, i) => {
             return (
@@ -58,7 +58,14 @@ const Home: NextPage = () => {
               </div>
             );
           })}
-        </main>
+
+          {/* If it is slider then the dot should be functional. Now it's only demo */}
+          <div className="absolute left-0 bottom-10 w-full flex justify-center gap-5">
+            <span className="block w-2.5 h-2.5 border-2 bg-secondary rounded-full"></span>
+            <span className="block w-2.5 h-2.5 border-2 bg-white rounded-full"></span>
+            <span className="block w-2.5 h-2.5 border-2 bg-white rounded-full"></span>
+          </div>
+        </div>
       </header>
 
       {/* ----------------- Glimpses section ----------------- */}

@@ -12,15 +12,15 @@ const footerNavData = [
   },
   {
     label: "Privacy Policy",
-    link: "/",
+    link: "/registration",
   },
   {
     label: "Disclaimer",
-    link: "/",
+    link: "/registration",
   },
   {
     label: "Contact us",
-    link: "/",
+    link: "/registration",
   },
 ];
 
@@ -30,7 +30,7 @@ const Footer = () => {
       {/* ----------- Newsletter ----------- */}
       <div className="w-full absolute -top-20">
         <div className="wrapper">
-          <div className="w-full sm:w-11/12 md:w-5/6 lg:w-4/6 m-auto text-center bg-white p-10 rounded-xl">
+          <div className="relative newsletter w-full sm:w-11/12 md:w-5/6 lg:w-4/6 m-auto text-center bg-white p-10 rounded-xl">
             <h3 className="subheading font-bold text-gray">Newsletter</h3>
             <form className="w-full md:w-3/4 mx-auto mt-10 mb-2 h-11 relative flex items-center justify-between border border-[#999999] p-px rounded-full">
               <span className="absolute pl-4">
@@ -48,6 +48,7 @@ const Footer = () => {
             <p className="text-[#666666]">
               We will send occasional newsletter to keep you informed
             </p>
+            <span className="newsletter_bottom_shadow absolute left-0 md:left-[-5%] xl:left-[-10%] -bottom-6 block w-full md:w-[110%] xl:w-[120%] h-6"></span>
           </div>
         </div>
       </div>

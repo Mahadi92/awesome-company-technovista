@@ -15,7 +15,7 @@ const Registration = () => {
   return (
     <main className="wrapper" style={{ minWidth: "380px" }}>
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-10 py-10">
-        <div className="w-full lg:w-4/12 flex flex-col-reverse lg:flex-col items-center  ">
+        <section className="w-full lg:w-4/12 flex flex-col-reverse lg:flex-col items-center  ">
           <div className="w-full h-full">
             <Image
               src="/static/images/registration_img.png"
@@ -31,8 +31,8 @@ const Registration = () => {
               <a className="text-primary font-semibold">Login</a>
             </Link>
           </p>
-        </div>
-        <div className="w-full lg:w-8/12">
+        </section>
+        <section className="w-full lg:w-8/12">
           <div className="sm:flex items-center gap-8">
             <span>
               <BrandIco />
@@ -134,7 +134,7 @@ const Registration = () => {
               </button>
             </div>
           </form>
-        </div>
+        </section>
       </div>
       <p className="py-5 text-center text-gray-light text-base">
         © <span className="font-bold">Copyright</span> 2020-2022 The Awesome

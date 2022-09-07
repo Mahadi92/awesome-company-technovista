@@ -53,7 +53,7 @@ input:focus{
 }
 .btn-tertiary{
   @extend .btn;
-  @apply bg-tertiary px-10 rounded-full;
+  @apply bg-tertiary hover:text-white px-10 rounded-full;
 }
 
 .rounded-lg-img img{

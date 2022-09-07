@@ -12,23 +12,23 @@ const navData = [
   },
   {
     label: "About US",
-    link: "/",
+    link: "/registration",
   },
   {
     label: "Services",
-    link: "/",
+    link: "/registration",
   },
   {
     label: "Portfolio",
-    link: "/",
+    link: "/registration",
   },
   {
     label: "Contact Us",
-    link: "/",
+    link: "/registration",
   },
   {
     label: "Support",
-    link: "/",
+    link: "/registration",
   },
 ];
 

@@ -10,7 +10,7 @@ const DefaultLayout: React.FC<PropType> = ({ children }) => {
   return (
     <div style={{ minWidth: "380px" }}>
       <Navbar />
-      <div>{children}</div>
+      <main>{children}</main>
       <Footer />
     </div>
   );
