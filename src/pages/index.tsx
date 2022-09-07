@@ -31,7 +31,7 @@ const Home: NextPage = () => {
     <DefaultLayout>
       {/* ----------------- Header section ----------------- */}
       <header className="home_hero pt-36 pb-16 lg:h-[90vh] flex items-center">
-        <div className="wrapper">
+        <main className="wrapper">
           {/* If this is slider */}
           {heroData.map((item, i) => {
             return (
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
               </div>
             );
           })}
-        </div>
+        </main>
       </header>
 
       {/* ----------------- Glimpses section ----------------- */}

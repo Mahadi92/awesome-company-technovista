@@ -1,4 +1,5 @@
 
+
 // -------------- Navbar style -------------- //
 .nav_items_grp{
   @apply flex items-center gap-5 uppercase font-semibold;
@@ -22,3 +23,22 @@
     background: linear-gradient(rgba(80, 114, 157, 0.84), rgba(80, 114, 157, 0.84)), url("/static/images/team_bg.png") no-repeat center center / cover;
     clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
   }
+
+  .input_select{
+    @apply flex items-center;
+    .ant-select-selector{
+      height: 3rem !important;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+.ant-radio-inner{
+  @apply border border-primary;
+}
+.ant-radio-inner:after{
+  @apply bg-primary;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  @apply border border-primary bg-primary;
+}

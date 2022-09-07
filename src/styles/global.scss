@@ -14,6 +14,10 @@
     @apply font-normal;
 }
 
+input:focus{
+  @apply border-transparent ring-0 outline-none;
+}
+
 
 // ----------- Container -------------- //
 .wrapper{
@@ -21,18 +25,15 @@
 }
 
 // ---------- sizing ---------- //
-h1,
 .heading{
   @apply text-5xl font-bold m-0 leading-none;
   font-family: 'Playfair Display', serif;
 }
 
-h2,
 .sectionHeading{
   @apply text-4xl font-bold m-0 leading-none;
   font-family: 'Playfair Display', serif;
 }
-h3,
 .subheading{
   @apply text-3xl font-bold m-0 leading-none;
   font-family: 'Playfair Display', serif;
@@ -44,7 +45,7 @@ h3,
 }
 .btn-primary{
   @extend .btn;
-  @apply bg-primary;
+  @apply bg-primary text-lg rounded px-4;
 }
 .btn-secondary{
   @extend .btn;
@@ -65,4 +66,3 @@ h3,
     border-top-left-radius: 0.5rem; 
     border-bottom-left-radius: 0.5rem,; 
 }
-
