@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
-    @apply font-light;
+    @apply font-normal;
 }
 
 
@@ -29,12 +29,12 @@ h1,
 
 h2,
 .sectionHeading{
-  @apply text-4xl font-semibold m-0 leading-none;
+  @apply text-4xl font-bold m-0 leading-none;
   font-family: 'Playfair Display', serif;
 }
 h3,
 .subheading{
-  @apply text-3xl font-semibold m-0 leading-none;
+  @apply text-3xl font-bold m-0 leading-none;
   font-family: 'Playfair Display', serif;
 }
 
@@ -48,7 +48,7 @@ h3,
 }
 .btn-secondary{
   @extend .btn;
-  @apply bg-secondary;
+  @apply bg-secondary px-5 font-medium tracking-wider rounded-full;
 }
 .btn-tertiary{
   @extend .btn;

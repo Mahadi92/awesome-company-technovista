@@ -55,7 +55,7 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 w-full hidden md:flex justify-center items-center ${
           scrollHeight > 100
-            ? "text-white bg-primary/80 py-5"
+            ? "text-white bg-primary/80 backdrop-blur-lg py-5"
             : "text-white py-10"
         } transition ease-in-out duration-300 z-50`}
       >
@@ -89,7 +89,7 @@ const Navbar = () => {
       {/* ----------- Mobile Navbar ----------- */}
       <nav
         className={`fixed top-0 left-0 w-full flex justify-between md:hidden py-5 px-4 transform duration-300 ${
-          scrollHeight > 100 ? "bg-primary/80 py-5" : "py-10"
+          scrollHeight > 100 ? "bg-primary/80 backdrop-blur-lg py-5" : "py-10"
         } z-50`}
       >
         <Link href="/" passHref>
