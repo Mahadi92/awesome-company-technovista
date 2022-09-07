@@ -28,8 +28,13 @@ h1,
 }
 
 h2,
-.subheading{
+.sectionHeading{
   @apply text-4xl font-semibold m-0 leading-none;
+  font-family: 'Playfair Display', serif;
+}
+h3,
+.subheading{
+  @apply text-3xl font-semibold m-0 leading-none;
   font-family: 'Playfair Display', serif;
 }
 

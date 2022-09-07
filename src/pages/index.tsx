@@ -62,8 +62,8 @@ const Home: NextPage = () => {
       </header>
 
       {/* ----------------- Glimpses section ----------------- */}
-      <section className="glimpses_section">
-        <div className="text-center grid gap-4 pt-14 pb-10">
+      <section className="glimpses_section py-20">
+        <div className="text-center grid gap-4 pb-10">
           <h2 className="subheading">Glimpses</h2>
           <p className="font-normal text-2xl">
             Our workplace can be best previewed in photos
@@ -100,6 +100,32 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
+
+      {/* ----------------- Team section ----------------- */}
+      <section className="relative w-full h-full mt-28">
+        <div className="absolute -top-32 left-0 w-full z-10">
+          <div className="text-center">
+            <Image
+              src="/static/images/team_batch.png"
+              width={360}
+              height={400}
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="team_section pt-40 flex justify-center items-center">
+          <div className="text-center grid gap-4 py-5">
+            <h3 className="subheading text-white">An Awesome Team</h3>
+            <p className="w-4/5 md:w-3/4 m-auto text-white">
+              Rapidiously actualize client-based products before out-of-the-box
+              leadership skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ----------------- Team section ----------------- */}
+      <footer></footer>
     </DefaultLayout>
   );
 };

@@ -87,7 +87,11 @@ const Navbar = () => {
       </nav>
 
       {/* ----------- Mobile Navbar ----------- */}
-      <nav className="fixed top-0 left-0 w-full flex justify-between md:hidden py-5 px-4 transform duration-300 z-50">
+      <nav
+        className={`fixed top-0 left-0 w-full flex justify-between md:hidden py-5 px-4 transform duration-300 ${
+          scrollHeight > 100 ? "bg-primary/80 py-5" : "py-10"
+        } z-50`}
+      >
         <Link href="/" passHref>
           <a>
             <BrandIco size={"40"} />
@@ -98,24 +102,24 @@ const Navbar = () => {
         </button>
 
         <div
-          className={`w-80 top-20 left-0 h-screen ${
+          className={`w-80 top-0 right-0 h-screen ${
             isOpen
               ? "absolute translate-x-0"
-              : "absolute left-0 -translate-x-80"
-          } px-10 pt-16 transform duration-300 bg-secondary/10 z-20`}
+              : "absolute right-0 translate-x-80"
+          } px-10 pt-16 transform duration-300 bg-primary text-white z-20`}
         >
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute right-5 top-5"
+            className="absolute left-5 top-5"
           >
             <IoMdClose size={20} />
           </button>
-          <ul className="grid gap-3">
+          <ul className="grid text-right gap-3">
             {navData.map((item, i) => {
               return (
                 <li key={i}>
                   <Link href="/" passHref>
-                    <a className="font-semibold">{item.label}</a>
+                    <a className="font-semibold text-xl">{item.label}</a>
                   </Link>
                 </li>
               );
