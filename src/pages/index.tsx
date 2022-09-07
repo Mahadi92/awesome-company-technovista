@@ -1,5 +1,6 @@
 import DefaultLayout from "@/components/layouts/DefaultLayout";
 import type { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -29,6 +30,12 @@ const heroData: HeroData[] = [
 const Home: NextPage = () => {
   return (
     <DefaultLayout>
+      <Head>
+        <title>The Awesome Company</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/static/brand/brand.png" />
+      </Head>
+
       {/* ----------------- Header section ----------------- */}
       <header className="home_hero relative pt-36 pb-16 lg:h-[90vh] flex items-center">
         <div className="wrapper">
@@ -53,7 +60,12 @@ const Home: NextPage = () => {
                   </Link>
                 </div>
                 <div className="w-full h-full flex justify-center lg:justify-end items-center">
-                  <Image src={item.img} width={400} height={379} alt="" />
+                  <Image
+                    src={item.img}
+                    width={400}
+                    height={379}
+                    alt={item.heading}
+                  />
                 </div>
               </div>
             );
@@ -84,7 +96,7 @@ const Home: NextPage = () => {
               width="100%"
               height="103%"
               objectFit="cover"
-              alt=""
+              alt="Glimpses"
             />
           </div>
           <div className="w-full h-full grid gap-3 md:gap-5 rounded-lg-img">
@@ -94,7 +106,7 @@ const Home: NextPage = () => {
               width="100%"
               height="50%"
               objectFit="cover"
-              alt=""
+              alt="Glimpses"
             />
             <Image
               src="/static/images/glimpses_right2.png"
@@ -102,7 +114,7 @@ const Home: NextPage = () => {
               width="100%"
               height="50%"
               objectFit="cover"
-              alt=""
+              alt="Glimpses"
             />
           </div>
         </div>
@@ -116,7 +128,7 @@ const Home: NextPage = () => {
               src="/static/images/team_batch.png"
               width={360}
               height={400}
-              alt=""
+              alt="Awesome Team"
             />
           </div>
         </div>

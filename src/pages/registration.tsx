@@ -9,11 +9,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { Radio } from "antd";
 import React, { useState } from "react";
+import Head from "next/head";
 
 const Registration = () => {
   const [acceptTerms, setAcceptTerms] = useState(false);
   return (
     <main className="wrapper" style={{ minWidth: "380px" }}>
+      <Head>
+        <title>The Awesome Company Registration</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/static/brand/brand.png" />
+      </Head>
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-10 py-10">
         <section className="w-full lg:w-4/12 flex flex-col-reverse lg:flex-col items-center  ">
           <div className="w-full h-full">
@@ -22,7 +28,7 @@ const Registration = () => {
               layout="responsive"
               width="100%"
               height="100"
-              alt=""
+              alt="The Awesome Company"
             />
           </div>
           <p className="text-2xl pt-6">
