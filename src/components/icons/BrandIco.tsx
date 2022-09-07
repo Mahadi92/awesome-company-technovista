@@ -1,11 +1,15 @@
 import React from "react";
 
-const BrandIco = () => {
+interface PropsType {
+  size?: string | number;
+}
+
+const BrandIco = ({ size = "72" }) => {
   return (
     <svg
-      width="72"
-      height="74"
-      viewBox="0 0 72 74"
+      width={size.toString()}
+      height={size.toString()}
+      viewBox="0 0 72 72"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

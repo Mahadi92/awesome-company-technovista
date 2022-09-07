@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <DefaultLayout>
-      <div>hello</div>
+      <header></header>
     </DefaultLayout>
   );
 };

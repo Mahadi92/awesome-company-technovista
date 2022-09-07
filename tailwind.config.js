@@ -7,20 +7,27 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#C90000",
-          dark: "#6B0F0F",
+          DEFAULT: "#058192",
+        },
+        secondary: {
+          DEFAULT: "#2F4776",
+        },
+        tertiary: {
+          DEFAULT: "#2F4776",
         },
         gray: {
-          DEFAULT: "#505050",
-          dark: "#212121",
-        },
-        font: {
-          100: "#F1F5F9",
-          200: "#E2E8F0",
-          300: "#CBD5E1",
-          DEFAULT: "#F1F5F9",
+          DEFAULT: "#333333",
         },
       },
+    },
+    screens: {
+      xs: "420px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+      "4xl": "2024px",
     },
   },
   plugins: [],
