@@ -34,8 +34,15 @@ const navData = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollHeight, setScrollHeight] = useState(0);
 
   const windowSize = useWindowSize();
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrollHeight(window.scrollY);
+    });
+  }, []);
 
   useEffect(() => {
     if (windowSize.width < 768) {
@@ -45,7 +52,13 @@ const Navbar = () => {
   return (
     <>
       {/* ----------- Desktop Navbar ----------- */}
-      <nav className="fixed top-0 left-0 w-full hidden md:flex justify-center items-center py-10">
+      <nav
+        className={`fixed top-0 left-0 w-full hidden md:flex justify-center items-center ${
+          scrollHeight > 200
+            ? "text-white bg-primary/40 py-5"
+            : "text-white py-10"
+        } transition ease-in-out duration-300 z-50`}
+      >
         <ul className="nav_items_grp">
           {navData.slice(0, Math.ceil(navData.length / 2)).map((item, i) => {
             return (
@@ -74,13 +87,13 @@ const Navbar = () => {
       </nav>
 
       {/* ----------- Mobile Navbar ----------- */}
-      <nav className="fixed top-0 left-0 w-full flex justify-between md:hidden py-5 px-4 transform duration-300">
+      <nav className="fixed top-0 left-0 w-full flex justify-between md:hidden py-5 px-4 transform duration-300 z-50">
         <Link href="/" passHref>
-          <a className="">
+          <a>
             <BrandIco size={"40"} />
           </a>
         </Link>
-        <button onClick={() => setIsOpen(!isOpen)}>
+        <button onClick={() => setIsOpen(!isOpen)} className="text-white">
           <IoMenu size={40} />
         </button>
 

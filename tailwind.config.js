@@ -13,7 +13,7 @@ module.exports = {
           DEFAULT: "#2F4776",
         },
         tertiary: {
-          DEFAULT: "#2F4776",
+          DEFAULT: "#FF5529",
         },
         gray: {
           DEFAULT: "#333333",

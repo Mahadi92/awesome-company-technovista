@@ -2,5 +2,10 @@
 // -------------- Navbar style -------------- //
 .nav_items_grp{
   @apply flex items-center gap-5 uppercase font-semibold;
+}
 
+// -------------- Home style -------------- //
+.home_hero{
+  background: linear-gradient(rgba(18, 36, 47, 0.14), rgba(18, 36, 47, 0.14)), url("/static/images/hero_bg.png") no-repeat center center / cover;
+  clip-path: ellipse(162% 100% at 50% 0%);
 }
