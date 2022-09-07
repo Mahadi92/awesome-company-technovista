@@ -23,13 +23,13 @@
 // ---------- sizing ---------- //
 h1,
 .heading{
-  @apply text-5xl text-gray m-0 leading-none;
+  @apply text-5xl font-bold m-0 leading-none;
   font-family: 'Playfair Display', serif;
 }
 
 h2,
 .subheading{
-  @apply text-base text-gray m-0 leading-none;
+  @apply text-4xl font-semibold m-0 leading-none;
   font-family: 'Playfair Display', serif;
 }
 

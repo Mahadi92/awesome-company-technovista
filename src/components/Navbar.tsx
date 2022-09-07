@@ -54,8 +54,8 @@ const Navbar = () => {
       {/* ----------- Desktop Navbar ----------- */}
       <nav
         className={`fixed top-0 left-0 w-full hidden md:flex justify-center items-center ${
-          scrollHeight > 200
-            ? "text-white bg-primary/40 py-5"
+          scrollHeight > 100
+            ? "text-white bg-primary/80 py-5"
             : "text-white py-10"
         } transition ease-in-out duration-300 z-50`}
       >
